@@ -6,83 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="serg, cv, resume">
     <meta name="description" content="Это сайт - резюме Сергея">
+    <link rel="stylesheet" href="styles.css">
     <title>Serg Resume</title>
+    <!-- <style>
+        @media (max-width: 650px) {
+            .info {
+                font-size: 0.5rem;
+            }
+        }
+    </style> -->
 </head>
 <body>
-    <img src="avatar1.jpg" alt="it" width="200">
-    <h1>Вадим Каменщиков</h1>
-    <p>Я живу в городе <strong>Минске</strong>. Изучаю <strong>программирование и работаю</strong>.</p>
-    <p>Мне <em>нравится кататься на велосипеде</em> и тд.</p>
-    <h4>Список ссылок</h4>
-    <a href="https://youtube.com" target="_blank">Youtube</a>
-    #
-    <a href="https://google.com" target="_blank">Google</a>
-    #
-    <a href="https://yandex.ru" target="_blank">Yandex</a>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Велосипед</li>
-        <li>Программирование</li>
-        <li>Хоккей</li>
-        <li>Плавание</li>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ИнсервисСтрой</td>
-                <td>Арматурщик</td>
-                <td>2009-2010</td>
-            </tr>
-            <tr>
-                <td>МонолитТрансСтрой</td>
-                <td>Арматурщик</td>
-                <td>2010</td>
-            <tr>
-            <tr>
-                <td>АДС-2000</td>
-                <td>Арматурщик</td>
-                <td>2010-2012</td>
-            <tr>
-                <td>ИнсервисСтрой</td>
-                <td>Арматурщик</td>
-                <td>2009-2010</td>
-            </tr>
-            <tr>
-                <td>ТримифИнжСтрой</td>
-                <td>Арматурщик</td>
-                <td>2010-2022</td>
-            </tr>
-                
-        </tbody>
-    </table>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="conteiner">
+        <div class="info">
+            <img src="avatar1.jpg" alt="it" class="avatar">
+            <div class="info-text">
+                <h1>Вадим Каменщиков</h1>
+                <p>Я живу в городе <strong>Минске</strong>. Изучаю <strong>программирование и работаю</strong>.</p>
+                <p>Мне <em>нравится кататься на велосипеде</em> и тд.</p>
+                <h4>Список ссылок</h4>
+                <a href="https://youtube.com" target="_blank">Youtube</a>
+                #
+                <a href="https://google.com" target="_blank">Google</a>
+                #
+                <a href="https://yandex.ru" target="_blank">Yandex</a>
+            </div>
         </div>
+            <div class="card bg-yellow">
+                <h2>Мои хобби</h2>
+                <ol class="list">
+                    <li>Велосипед</li>
+                    <li>Программирование</li>
+                    <li>Хоккей</li>
+                    <li>Плавание</li>
+                </ol>
+            </div>
 
-        <div>
-            <label for="email">Ваше email</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
+            <div class="card bg-red">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ИнсервисСтрой</td>
+                            <td>Арматурщик</td>
+                            <td>2009-2010</td>
+                        </tr>
+                        <tr>
+                            <td>МонолитТрансСтрой</td>
+                            <td>Арматурщик</td>
+                            <td>2010</td>
+                        <tr>
+                        <tr>
+                            <td>АДС-2000</td>
+                            <td>Арматурщик</td>
+                            <td>2010-2012</td>
+                        <tr>
+                            <td>ИнсервисСтрой</td>
+                            <td>Арматурщик</td>
+                            <td>2009-2010</td>
+                        </tr>
+                        <tr>
+                            <td>ТримифИнжСтрой</td>
+                            <td>Арматурщик</td>
+                            <td>2010-2022</td>
+                        </tr>
+                            
+                    </tbody>
+                </table>
+            </div>
 
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea name="" id="message" cols="20" rows="5" placeholder="Введите сообщение"></textarea>
-        </div>
+        
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
 
-        <input type="submit" value="Отправить!">
-    </form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваше email</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение</label>
+                <!-- <br> -->
+                <textarea name="" id="message" cols="20" rows="5" placeholder="Введите сообщение"></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Отправить!">
+        </form>
+    </div>
 </body>
 </html>
