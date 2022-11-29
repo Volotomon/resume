@@ -2,4 +2,4 @@
 
 ## Результат вы можете посмотреть тут
 
-[Моя первая работа на HTML & CSS](https://https://github.com/Volotomon/resume/new/main?readme=1)
+[Моя первая работа на HTML & CSS](https://https://github.com/Volotomon/resume/)
