@@ -184,7 +184,7 @@ a:visited {
 
 @media (max-width: 742px) {
     .navbar {
-        /* display: block; */
+        display: block;
     }
 
     .navbar ul li {
